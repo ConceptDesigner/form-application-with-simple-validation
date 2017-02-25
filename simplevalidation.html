@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<!--
+ Filename: formprototype.html
+ Written by: James Lewis (JL)
+ Purpose: Form Prototype
+ Date: 05 April 2016
+ Modification History:
+ Original Build
+-->
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Prototype</title>
+  <link rel="stylesheet" type="text/css" href="svcss/style.css">
+  <link href="theme/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body id="bodyCenter">
+  <form method="get" id="myForm">
+    <fieldset id="fieldWidth">
+      <h1>Welcome to Vice Versa Development and Designs. Please fill out application and submit to proceed.</h1>
+      <hr>
+      <h2 class="demoHeaders">More information about the company:</h2>
+      <div id="accordion">
+        <h3>Development</h3>
+        <div>Here at Vice Versa our staff is committed to excellence for all of our clients. You can assure that all projects will be allocated accordingly. For example;
+          <ul>
+            <li>When it comes to development, our employees are actually the top performing students in there field.
+            </li>
+            <li>This provides excellence for all project handled.
+            </li>
+            <li>All work is then checked and approved by senior developers assuring that projects are completed on time and professionally at all times.</li>
+          </ul>
+        </div>
+        <h3>Design</h3>
+        <div>When it comes to the fashion of development and Programming, we have got you covered.
+          <ul>
+            <li>With development being the skeletal structure and function of design, this makes an interface do different thing but sort of black and white.
+            </li>
+            <li>Our design team is the skin and clothing of our development. They are the fashion designers of development and programming.
+            </li>
+            <li>Here at Vice Versa we have the most passionate designers who take pride in the work that they do. Ours designers treat your work as if it were their own.
+            </li>
+          </ul>
+        </div>
+        <h3>Dedication</h3>
+        <div>We are dedicated to you!
+          <ul>
+            <li>After filling out our simple application you will be contacted by one of our marketing professionals.</li>
+            <li>We will then schedule a face to face interview to introduce ourselves and to obtain specific details about your request.</li>
+            <li>You will meet you developer and designer via in person or webchat to until completion of the request.</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Please fill out required information</h2>
+      <label for="firstName">First Name:</label>
+      <input id="firstName" name="firstName" type="text" placeholder="type here..." autofocus required>
+      <br>
+      <br>
+      <br>
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" name="lastName" type="text" placeholder="type here..." required>
+      <br>
+      <br>
+      <br>
+      <label for="streetAddress">Address:</label>
+      <input id="streetAddress" name="streetAddress" type="text" placeholder="type here..." required>
+      <br>
+      <br>
+      <br>
+      <label for="phoneNumber">Phone:</label>
+      <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="type here..." required>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <h2 class="demoHeaders">Availability:</h2>
+      <p>What day would you have the most free time to sit with one of our representatives?</p>
+      <p>Insert Date:
+        <input type="text" id="datepicker" required>
+      </p>
+      <h3 class="demoHeaders">Hours available for meeting via face to face or video?</h3>
+      <label for="spinner"># of hours:</label>
+      <input id="spinner" name="value">
+      <hr>
+      <h2 class="demoHeaders">Please Decribe Project</h2>
+      <div>
+        <textarea id="userTextArea" rows="6" cols="75" required></textarea>
+      </div>
+      <br>
+      <h3 class="demoHeaders"> Please check the following that applys to project.</h3>
+      <hr>
+      <input type="radio" name="profession" value="Development" checked> Development
+      <br>
+      <input type="radio" name="profession" value="Design"> Design
+      <br>
+      <input type="radio" name="profession" value="Both"> Both
+      <br>
+      <input type="radio" name="profession" value="Other"> Other
+      <br>
+      <hr>
+      <p>
+        <button id="submit" type="submit" value="submit">Submit Form</button>
+        <button id="reset" type="reset">Reset</button>
+      </p>
+      <hr>
+      <h2>Summary of Application</h2>
+      <div id="content">
+        First Name: <span id="outputFirstName"></span>
+        <br/>
+        <br/> Last Name: <span id="outputLastName"></span>
+        <br/>
+        <br/> Address: <span id="outputAddress"></span>
+        <br/>
+        <br/> Phone: <span id="outputPhone"></span>
+        <br/>
+        <br/> Date Available: <span id="outputDate"></span>
+        <br/>
+        <br/> Hours Available: <span id="outputHours"></span>
+        <br/>
+        <br/> Brief Project Description: <span id="outputProjectDes"></span>
+        <br/>
+        <br/> Profession for Project: <span id="outputProfession"></span>
+        <br/>
+        <br/>
+      </div>
+    </fieldset>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="validation/dist/jquery.validate.js"></script>
+  <script type="text/javascript" src="theme/jquery-ui.js"></script>
+  <script type="text/javascript" src="svjs/main.js"></script>
+  <script type="text/javascript" src="svjs/themain.js"></script>
+</body>
+
+</html>
